@@ -1,0 +1,131 @@
+/* stying for the calculator */
+/*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    font-size: larger;
+    border: 3px solid white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+*/
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Soft text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator Container */
+.calculator {
+    background-color: #1e1e1e; /* Slightly lighter dark tone */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Headings */
+.calculator h2 {
+    margin: 0;
+    color: #03dac6; /* Accent green */
+    font-size: 1.8rem;
+}
+
+.calculator .tag {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #bbbbbb;
+    font-style: italic;
+}
+
+/* Labels */
+.calculator label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #e0e0e0;
+    text-align: left;
+}
+
+/* Input Fields */
+.calculator input, 
+.calculator select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color: #222222;
+    color: #e0e0e0;
+    font-size: 1rem;
+}
+
+/* Input Field Focus */
+.calculator input:focus, 
+.calculator select:focus {
+    outline: none;
+    border: 1px solid #03dac6; /* Highlight on focus */
+}
+
+/* Button */
+.calculator button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #03dac6; /* Accent green */
+    color: #121212; /* Contrast text */
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.calculator button:hover {
+    background-color: #018786;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .calculator {
+        padding: 1.5rem;
+    }
+
+    .calculator h2 {
+        font-size: 1.5rem;
+    }
+
+    .calculator .tag {
+        font-size: 0.8rem;
+    }
+}
